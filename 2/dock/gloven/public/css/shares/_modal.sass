@@ -1,0 +1,133 @@
+.modal
+    z-index: 20
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#000, 0.7)
+    display: none
+    align-items: center
+    justify-content: center
+    &-container
+        position: relative
+        background: linear-gradient(45deg, darken($active, 10%), #d13980)
+        border-radius: 10px
+        max-width: 1000px
+        width: 90%
+        padding: 4rem 2rem
+    &-form
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-weight: 600
+        color: $light
+        font-family: 'Montserrat Alternates', sans-serif
+        &__close
+            position: absolute
+            z-index: 21
+            top: 2%
+            right: 2%
+            font-size: 3rem
+            color: $main
+            cursor: pointer
+        &__title
+            margin-bottom: 2rem
+            text-align: center
+            font-size: 3rem
+        &__group
+            position: relative
+            display: flex
+            flex-direction: column
+            width: 80%
+            margin-bottom: 3rem
+            label
+                font-size: 1.8rem
+                margin-bottom: 5px
+                cursor: pointer
+            input, textarea, select
+                padding: 1rem
+                font-size: 1.8rem
+                color: $main
+                font-family: 'Montserrat Alternates', sans-serif
+                font-weight: 600
+                border-radius: 5px 5px 0 0
+                border: none
+            textarea
+                resize: none
+                height: 20rem
+        &__check
+            position: relative
+            display: flex
+            align-items: center
+            margin-bottom: 1rem
+            width: 80%
+            &Btn
+                position: relative
+                width: 2rem
+                height: 2rem
+                border: 3px solid $light
+                border-radius: 2px
+                cursor: pointer
+                &::before
+                    position: absolute
+                    z-index: 3
+                    top: 50%
+                    left: 50%
+                    content: "✓"
+                    display: none
+                    font-size: 2.5rem
+                    font-weight: 700
+                    color: $light
+                    transform: translate(-50%, -50%)
+                &_active
+                    &::before
+                        display: block
+            &Label
+                font-size: 1.6rem
+                margin-left: 5px
+                cursor: pointer
+            &Input
+                position: absolute
+                top: 0
+                left: 0
+                z-index: -3
+                opacity: 0
+        &__file
+            width: 80%
+            margin-bottom: 2rem
+            background: $light
+            border-radius: 5px 5px 0 0
+            overflow: hidden
+            label
+                font-size: 1.8rem
+                color: $main
+                width: 100%
+                display: block
+                padding: 1rem
+                cursor: pointer
+            input
+                display: none
+        &__submit
+            margin-top: 2rem
+            padding: 0.5rem 5rem
+            font-size: 1.8rem
+            font-family: 'Montserrat Alternates', sans-serif
+            font-weight: 600
+            border-radius: 20px 
+            background: transparent
+            color: $light
+            border: 2px solid #d13980
+            transition: 0.3s
+            &:hover
+                box-shadow: 0 0 5px $active, 0 0 15px $active
+                background: $active
+                border-color: $active
+    label.error
+        z-index: 5
+        position: absolute
+        top: 100%
+        left: 0
+        color: red
+        font-size: 1.6rem
+        transform: translateY(5px)

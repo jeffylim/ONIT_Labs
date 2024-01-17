@@ -1,0 +1,55 @@
+.footer
+    padding: 2rem 0
+    background: $main
+    color: $light
+    &-copy
+        text-align: center
+        font-size: 1.8rem
+    &-title
+        font-size: 1.8rem
+    &-link
+        display: flex
+        align-items: center
+        margin-top: 1rem
+        &__item
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 4rem
+            height: 4rem
+            margin-right: 2rem
+            font-size: 2rem
+            border-radius: 50%
+            transition: 0.2s ease-in
+            color: $main
+            background: $light
+            &:hover
+                color: $light
+        .tg:hover
+            background: #08c
+            box-shadow: 0 0 5px #0088cc, 0 0 15px #0088cc
+        .utube:hover
+            background: #c4302b
+            box-shadow: 0 0 5px #c4302b, 0 0 15px #c4302b
+        .inst:hover
+            background: #c13584
+            box-shadow: 0 0 5px #c13584, 0 0 15px #c13584
+        .fb:hover
+            background: #3b5998
+            box-shadow: 0 0 5px #3b5998, 0 0 15px #3b5998
+        .vk:hover
+            background: #07f
+            box-shadow: 0 0 5px #07f, 0 0 15px #07f
+    &-feedback
+        &__title
+            font-size: 2rem
+        &__btn
+            margin-top: 1rem
+            padding: 1rem 5rem
+            border-bottom: 4px solid darken($active, 10%)
+            cursor: pointer
+            transition: 0.3s
+            &:hover
+                transform: translateY(4px)
+                border-color: transparent
+            

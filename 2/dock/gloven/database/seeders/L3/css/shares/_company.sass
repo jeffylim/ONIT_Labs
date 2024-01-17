@@ -1,0 +1,103 @@
+.scene
+    position: relative
+    width: 100%
+    min-height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    &-content
+        position: relative
+        z-index: 10
+        padding: 3rem
+        border-radius: 20px
+        color: $main
+        background: rgba($light, 0.4)
+        box-shadow: 0 0 2px $main
+        &__title
+            margin-bottom: 2rem
+            font-size: 5rem
+            text-align: center
+            font-weight: 700
+        &__subtitle
+            margin-bottom: 2rem
+            font-size: 4rem
+            text-align: center
+            font-family: 'Montserrat Alternates', sans-serif
+            font-weight: 600
+    &-btn
+        position: absolute
+        z-index: 12
+        bottom: 0
+        left: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 2.5px solid $active
+        width: 6rem
+        height: 6rem
+        font-size: 3rem
+        border-radius: 50%
+        cursor: pointer
+        color: $active
+        transform: translate(-50%, -200%)
+        transition: 0.2s ease-in
+        &:hover
+            background: $active
+            color: $light
+            box-shadow: 0 0 5px $active, 0 0 15px $active
+    .layer
+        position: fixed
+        top: 0
+        left: -10%
+        width: 110%
+        height: 100%
+        &-1
+            background: url('../img/m_1.png') center / cover no-repeat
+            z-index: 1
+        &-2
+            background: url('../img/m_2.png') bottom-right / 45% no-repeat
+            z-index: 2
+        &-3
+            background: url(../img/m_3.png) bottom left / 100% no-repeat
+            z-index: 2
+        &-fog
+            background: url('../img/fog.png') bottom / 100% no-repeat
+            z-index: 3
+.content
+    position: relative
+    z-index: 1
+    .header
+        background: transparent
+        &-wrapper
+            background: $body-bg
+    &-section
+        background: transparent
+        .left, .right
+            background: $body-bg
+            min-height: 80vh
+    .footer
+        background: transparent
+        padding: 0
+        &-container
+            padding: 2rem 0
+            background: $main
+.company
+    color: $main
+    &-img
+        img
+            width: 100%
+    &-info
+        &__title
+            margin-top: 2rem
+            margin-bottom: 1rem
+            font-size: 3rem
+            font-weight: 700
+        &__description
+            font-size: 1.8rem
+            font-weight: 500
+    &-text
+        margin-top: 2rem
+        line-height: 18px
+        font-size: 16px
+    &-more
+        margin-top: 3rem

@@ -1,0 +1,92 @@
+.partners
+    &-tabs
+        position: relative
+        display: flex
+        font-size: 1.8rem
+        font-weight: 500
+        &::after
+            position: absolute
+            z-index: 3
+            bottom: 0
+            left: 0
+            content: ""
+            display: block
+            width: 100%
+            height: 1rem
+            background: $active
+            transform: translateY(100%)
+        &__item
+            width: 100%
+            text-align: center
+            padding: 1rem 0
+            border-top: 5px solid transparent
+            border-right: 5px solid transparent
+            cursor: pointer
+    #partners-tabs__item_active
+        transition: 0.3s
+        border-color: darken($active, 10%)
+        background: $active
+        color: $light
+    &-item
+        display: none
+        margin-top: 1rem
+        &__title
+            font-size: 3rem
+            font-weight: 700
+        &__text
+            margin-top: 1rem
+            margin-bottom: 2rem
+            color: $short
+            font-size: 1.6rem
+            line-height: 1.8rem
+        &__cards, &__benefits, &__features
+            margin-top: 3rem
+    &-card
+        &__title
+            margin-bottom: 1rem
+            color: $long
+            font-size: 2rem
+            font-weight: 500
+        &__text
+            line-height: 1.8rem
+            font-size: 14px
+    &-benefits
+        position: relative
+        margin-bottom: 2rem
+        &::before
+            position: absolute
+            z-index: 3
+            top: 0
+            left: 0
+            content: "✔"
+            display: inline-block
+            font-size: 2.5rem
+            color: $active
+            transform: translate(-105%, -30%)
+        &__text
+            color: $short
+            line-height: 2rem
+            font-size: 1.8rem
+    &-features
+        cursor: default
+        transition: 0.3s
+        &:hover
+            img
+                transform: scale(1.2)
+        &__img
+            border-radius: 20px
+            overflow: hidden
+            box-shadow: 4px 4px 2px darken($active, 10%) 
+            img
+                transition: 0.3s
+        &__title
+            margin-top: 0.5rem
+            margin-bottom: 1rem
+            font-size: 2rem
+            font-weight: 500
+            color: $long
+        &__text
+            font-size: 1.6rem
+            color: $short
+            line-height: 1.8rem
+    

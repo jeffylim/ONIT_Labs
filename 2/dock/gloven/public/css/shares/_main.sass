@@ -1,0 +1,62 @@
+.left, .right
+    background: $light
+    min-height: 70vh
+.left
+    display: flex
+    justify-content: center
+    &-menu
+        width: 100%
+        list-style: none
+        &__item
+            position: relative
+            text-align: center
+            *
+                color: $main
+            &::after
+                position: absolute
+                right: 0
+                top: 0
+                z-index: 2
+                width: 0
+                height: 100%
+                background: $active
+                content: ""
+                display: block
+                transition: 0.3s
+            &:hover
+                &::after
+                    width: 100%
+                    left: 0
+            a
+                position: relative
+                z-index: 4
+                display: block
+                padding: 1.5rem 0
+                font-weight: 500
+                font-size: 1.8rem
+                transition: 0.3s
+                transition-delay: 0.1s
+                &:hover
+                    color: $light
+            &_active
+                background: $active
+                color: $light 
+.right
+    &-banners
+        display: flex
+        flex-direction: column
+        margin: auto
+        width: 90%
+        &__item
+            position: relative
+            margin: 1rem 0
+            border-radius: 10px
+            overflow: hidden
+            img
+                width: 100%
+                transition: 0.3s
+            &:hover
+                img
+                    transform: scale(1.2)
+.section
+    padding-top: 2.5rem

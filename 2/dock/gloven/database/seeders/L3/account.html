@@ -1,0 +1,205 @@
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <a href="index.html" class="header-logo">
+                            <img src="./img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="header-title">Гелиос</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-form">
+                            <form>
+                                <div class="header-form__group">
+                                    <label for="login">Логин: </label>
+                                    <input type="text" minlength="5" id="login" required>
+                                </div>
+                                <div class="header-form__group">
+                                    <label for="password">Пароль: </label>
+                                    <input type="password" minlength="8" id="password" required>
+                                </div>
+                                <div class="header-form__buttons">
+                                    <input type="submit" value="Войти" class="btn header-form__sign">
+                                    <a href="signup.html" class="btn header-form__btn">Регистрация</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    
+    <div class="pa">
+        <div class="container">
+            <form class="pa-form">
+                <div class="pa-form__wrapper">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="pa-photo">
+                                <img src="./img/lk.jpg" alt="photo">
+                                <input type="file" id="changePhoto">
+                                <label for="changePhoto"><i class="fa fa-camera"></i></label>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="pa-main">
+                                <h1 class="pa-main__title">Основная информация</h1>
+                                <div class="pa-main-wrapper">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="pa-main__group">
+                                                <label for="surname">Фамилия</label>
+                                                <input type="text" id="surname" value="Оганесян" class="cantUpdate">
+                                            </div>
+                                            <div class="pa-main__group">
+                                                <label for="name">Имя</label>
+                                                <input type="text" id="name" value="Тигран" class="cantUpdate">
+                                            </div>
+                                            <div class="pa-main__group">
+                                                <label for="thirdname">Отчество</label>
+                                                <input type="text" id="thirdname" value="Ваагнович" class="cantUpdate">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="pa-main__group">
+                                                <label for="birthday">День рождения</label>
+                                                <input type="date" id="birthday" value="2000-12-31" class="cantUpdate">
+                                            </div>
+                                            <div class="pa-main__group">
+                                                <label for="sex">Пол</label>
+                                                <input type="text" id="sex" value="Мужской" class="cantUpdate">
+                                            </div>
+                                            <div class="pa-main__group">
+                                                <label for="nationality">Гражданство</label>
+                                                <input type="text" id="nationality" value="Россия" class="cantUpdate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pa-secondary">
+                    <div class="pa-secondary__tabs">
+                        <span class="pa-secondary__tab" id="pa-secondary__tab_active">Дополнительная информация</span>
+                        <span class="pa-secondary__tab">Безопасноть</span>
+                    </div>
+                    <div class="pa-secondary__item" style="display: block;">
+                        <div class="pa-secondary__group">
+                            <label for="lkmail">Почта</label>
+                            <input type="email" value="t-oganesyan00@yandex.ru" id="lkmail" class="canUpdate" required>
+                        </div>
+                        <div class="pa-secondary__group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" value="+7(929)997-97-94" id="phone" class="canUpdate" required>
+                        </div>
+                        <div class="pa-secondary__group">
+                            <label for="lklogin">Логин</label>
+                            <input type="text" value="gloven" id="lklogin" class="canUpdate" required>
+                        </div>
+                        <div class="pa-secondary__group">
+                            <label for="about">Обо мне</label>
+                            <textarea id="about" class="canUpdate"></textarea>
+                        </div>
+                        <span class="pa-secondary__change">Изменить</span>
+                    </div>
+                    <div class="pa-secondary__item">
+                        <div class="pa-secondary__group">
+                            <label for="pas">Ваш пароль</label>
+                            <input type="password" id="pas" value="12345678qwerty" class="cantUpdate">
+                        </div>
+                        <div class="pa-secondary__group">
+                            <label for="newpas">Новый пароль</label>
+                            <input type="text" id="newpas" class="changePas">
+                        </div>
+                        <div class="pa-secondary__group">
+                            <label for="newpasrep">Повторите новый пароль</label>
+                            <input type="paassword" id="newpasrep" class="changePas">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Сохранить" class="pa-form__submit">
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="footer-copy">
+                        <i class="fa fa-copyright"></i> Все права защищены
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-wrapper">
+                        <p class="footer-title">Подписывайтесь на нас в соцсетях</p>
+                        <div class="footer-link">
+                            <a href="https://web.telegram.org" class="footer-link__item tg"><i class="fa fa-telegram"></i></a>
+                            <a href="https://youtube.com" class="footer-link__item utube"><i class="fa fa-youtube-play"></i></a>
+                            <a href="https://instagram.com" class="footer-link__item inst"><i class="fa fa-instagram"></i></a>
+                            <a href="https://facebook.com" class="footer-link__item fb"><i class="fa fa-facebook"></i></a>
+                            <a href="https://vk.com" class="footer-link__item vk"><i class="fa fa-vk"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-feedback">
+                        <h2 class="footer-feedback__title">Какие-то вопросы?</h2>
+                        <span class="btn footer-feedback__btn">Напишите нам</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-container">
+            <form class="modal-form">
+                <span class="modal-form__close"><i class="fa fa-times-circle-o"></i></span>
+                <h2 class="modal-form__title">Напиши нам</h2>
+                <div class="modal-form__group">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="userMail" id="mail" required>
+                </div>
+                <div class="modal-form__group">
+                    <label for="title">Заголовок сообщения</label>
+                    <input type="text" name="userTitle" id="title" required>
+                </div>
+                <div class="modal-form__group">
+                    <label for="problem">Категория сообщения</label>
+                    <select id="problem" required>
+                        <option value="signProblem">Проблема с входом/регистрацией</option>
+                        <option value="siteProblem">Проблема с сайтом</option>
+                        <option value="wishes">Пожелания</option>
+                        <option value="thanks">Благодарность</option>
+                        <option value="another">Другое</option>
+                    </select>
+                </div>
+                <div class="modal-form__group">
+                    <label for="bigtext">Ваше сообщение</label>
+                    <textarea id="bigtext" name="userText"></textarea>
+                </div>
+                <div class="modal-form__file">
+                    <label for="userFile">Файл</label>
+                    <input type="file" id="userFile">
+                </div>
+                <div class="modal-form__check">
+                    <div class="modal-form__checkBtn"></div>
+                    <input type="checkbox" id="person" name="userPerson" class="modal-form__checkInput" required>
+                    <label for="person" class="modal-form__checkLabel">Даю согласие на обработку персональных данных</label>
+                </div>
+                <input type="submit" value="Отправить" class="modal-form__submit">
+            </form>
+        </div>
+    </div>
+

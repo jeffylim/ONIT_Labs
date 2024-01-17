@@ -1,0 +1,82 @@
+
+    
+    <div class="reg">
+        <a href="index.html" class="reg-back"><i class="fa fa-arrow-left"></i></a>
+        <div class="container">
+            <form action="#" class="form reg-form" autocomplete="off">
+                <div class="form-group">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" minlength="2" maxlength="20" class="form-group__input" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" minlength="2" maxlength="20" class="form-group__input" required>
+                </div>
+                <div class="form-group">
+                    <label for="thirdname">Отчество (при наличии)</label>
+                    <input type="text" id="thirdname" minlength="6" maxlength="20">
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Дата рождения</label>
+                    <input type="date" id="birthday" class="form-group__input" required>
+                </div>
+                <div class="form-drop">
+                    <label for="nationality">Гражданство</label>
+                    <input type="text" id="nationality" minlength="3" class="form-group__input" required>
+                    <ul class="form-drop__list" id="form-drop__list"></ul>
+                </div>
+                <span class="form-subtitle">Пол</span>
+                <div class="form-radio">
+                    <div class="form-radio__wrapper">
+                        <label for="man">Мужской</label>
+                        <input type="radio" id="man" name="sex" required>
+                        <div class="form-radio__button"><span></span></div>
+                    </div>
+                    <div class="form-radio__wrapper">
+                        <label for="woman">Женский</label>
+                        <input type="radio" id="woman" name="sex" required>
+                        <div class="form-radio__button"><span></span></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Почта</label>
+                    <input type="email" id="mail" minlength="10" class="form-group__input" maxlength="40" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" minlength="10" class="form-group__input" required>
+                </div>
+                <div class="form-group">
+                    <label for="login">Логин</label>
+                    <input type="text" id="login" minlength="5" class="form-group__input" maxlength="30" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-group__pas">Пароль</label>
+                    <input type="text" id="password" minlength="8" class="form-group__input" maxlength="32" required>
+                </div>
+                <div class="form-group">
+                    <label for="passwordrepeat" class="form-group__pas">Повторите пароль</label>
+                    <input type="password" minlength="8" maxlength="32" class="form-group__input" id="passwordrepeat" required>
+                </div>
+                <div class="form-file">
+                    <label for="photo">Загрузить изображение <i class="fa fa-upload"></i></label>
+                    <input type="file" id="photo">
+                </div>
+                <div class="form-checked">
+                    <div class="form-checked__btn"></div>
+                    <input type="checkbox" id="person" required>
+                    <label for="person">Даю согласие на обработку персональных данных</label>
+                </div>
+                <div class="form-checked">
+                    <div class="form-checked__btn form-checked__btn_active"></div>
+                    <input type="checkbox" id="mailing" checked>
+                    <label for="mailing">Отправлять рассылку на почту</label> 
+                </div>
+                <input type="submit" value="Регистрация" class="reg-submit">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $('#phone').mask('+7(999)999-99-99');
+    </script>
